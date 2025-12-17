@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayden B. Bruschke - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom styles for the glassmorphism effect */
+        .glass-box {
+            /* Glassmorphism core */
+            background: rgba(255, 255, 255, 0.15); /* Light background with transparency */
+            backdrop-filter: blur(10px); /* The key glass effect */
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #333; /* Darker text for readability over light background */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* For hover effect */
+        }
+
+        /* Hover effect: slightly larger and elevated */
+        .glass-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for the fixed navigation bar */
+        .navbar-custom {
+            background-color: #343a40 !important; /* Dark background for professional look */
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        /* Background for the entire page (to show off glass effect) */
+        body {
+            background: linear-gradient(135deg, #f0f8ff 0%, #a0c4ff 100%); /* Subtle gradient background */
+            padding-top: 70px; /* Space for the fixed navbar */
+        }
+        
+        .experience-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Styling for the social icons and contact links */
+        .contact-entry {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-entry i {
+            font-size: 1.1rem;
+            width: 30px; /* fixed width for alignment */
+            text-align: center;
+            color: #333;
+        }
+        .contact-entry a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-entry a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="g4.html">Grayden B. Bruschke</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="g4.html">Résumé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="portfolio.html">Photography Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Grayden B. Bruschke</h1>
+            <hr class="w-50 mx-auto">
+        </div>
+
+        <section class="mb-5 glass-box">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4>Brigham Young University</h4>
+                    <p class="mb-1"><em>Student</em></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Provo, Ut</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4>Viewmont High School</h4>
+                    <p class="mb-0"><em>Graduate</em></p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Bountiful, Ut</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            
+            <div class="col-lg-8">
+                <div class="glass-box">
+                    <h2 class="mb-4">Professional Experience</h2>
+
+                    <div class="experience-item">
+                        <h4 class="mb-0">Ski Instructor, Sundance Mountain Resort</h4>
+                        <p class="text-muted mb-1">November 2025 – Present | Provo, UT</p>
+                        <p>Provides professional, safety-focused ski instruction to individuals and groups of varying skill levels. Responsible for enhancing guest mountain experiences and ensuring adherence to safety protocols.</p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4 class="mb-0">Sales Associate, BYU Outdoors Unlimited</h4>
+                        <p class="text-muted mb-1">August 2025 – December 2025 | Provo, UT</p>
+                        <p>Managed all aspects of customer service and sales for outdoor equipment rentals, maintaining accurate inventory records, and providing expert advice on product selection and safety for a diverse clientele.</p>
+                    </div>
+
+                    <p class="text-center mt-3">
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#priorExperience" aria-expanded="false" aria-controls="priorExperience">
+                            View Prior Professional Experience
+                        </button>
+                    </p>
+                    
+                    <div class="collapse" id="priorExperience">
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">Dock Staff</h4>
+                            <p class="text-muted mb-1">May 2025 – July 2025 | Water’s Edge Lodge – Elfin Cove, AK</p>
+                            <ul>
+                                <li>Ensured guests had the best trip possible.</li>
+                                <li>Cleaned and prepared boats and fishing equipment.</li>
+                                <li>Instructed guests on safety procedures.</li>
+                                <li>Filleted fish and provided quality results.</li>
+                                <li>Assisted in construction projects and cleaning assignments.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">Warehouse Worker, Hope & Henry</h4>
+                            <p class="text-muted mb-1">
+                                <strong>Dates:</strong> November 2024 – December 2024 (Kaysville, UT); June 7, 2021 – June 25, 2021 (Farmington, UT); June 2020 – August 2020 (Farmington, UT)
+                            </p>
+                            <ul>
+                                <li>Organized warehouse to ensure product is readily available to sell, including organizing quantities and product information within the company database using Excel spreadsheets.</li>
+                                <li>Prepared and shipped product to customers and Amazon Distribution Centers in a timely manner.</li>
+                                <li>Received, processed, sorted, and organized new product upon arrival at the warehouse.</li>
+                                <li>Folded and re-packaged return items.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">Missionary Service</h4>
+                            <p class="text-muted mb-1">October 2022 – November 2024 | San Diego, CA</p>
+                            <ul>
+                                <li>Learned to speak and train others in Spanish.</li>
+                                <li>Balanced a full work load with multiple pressing tasks all at once.</li>
+                                <li>Experienced in leadership and training others with lots of use of spreadsheets and slide deck presentations.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">HVAC Fabricator</h4>
+                            <p class="text-muted mb-1">July 2022 – September 2022 | Custom Mechanical Designs – Centerville, UT</p>
+                            <ul>
+                                <li>Hands on experiencing working with sheet metal.</li>
+                                <li>Full time physical labor operating machinery and tools to build airduct.</li>
+                                <li>Organized and kept the shop clean.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">Customer Service representative</h4>
+                            <p class="text-muted mb-1">October 2021 – May 2022 | Ski ‘N See – Bountiful, UT</p>
+                            <ul>
+                                <li>Helped customers find what they are looking for and answer questions.</li>
+                                <li>Set up rental skis and snowboards, and tuned skis and snowboards.</li>
+                                <li>Made sales and showed customers different products.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h4 class="mb-0">Summer School Teacher / Assistant, Pinewood Wood Middle Campus</h4>
+                            <p class="text-muted mb-1">
+                                <strong>Dates:</strong> July 2021 – August 2021 (Teacher); July 2019 – August 2019 (Assistant) | Los Altos, CA
+                            </p>
+                            <ul>
+                                <li>Taught Kindergarten P.E., instructed the class about new games, and oversaw activities.</li>
+                                <li>Set up and cleaned up materials for Science Class, keeping supplies available to teachers and students.</li>
+                                <li>Aided students with assignments and ensured that daily activities ran smoothly and on schedule.</li>
+                            </ul>
+                        </div>
+                        
+                    </div> </div> </div>
+
+            <div class="col-lg-4">
+                
+                <div class="glass-box">
+                    <h3 class="mb-3 text-center">Contact & Social</h3>
+                    <address class="mb-0">
+                        <div class="contact-entry">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+14692471002">(469) 247-1002 Cell</a>
+                        </div>
+                        <div class="contact-entry">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:grayden.bruschke@gmail.com">grayden.bruschke@gmail.com</a>
+                        </div>
+                        <div class="contact-entry">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/grayden_photography_?igsh=MTk5YWZ5ZGR4eWx4Mw%3D%3D&utm_source=qr" target="_blank">@grayden_photography_</a>
+                        </div>
+                    </address>
+                </div>
+
+                <div class="glass-box">
+                    <h2 class="mb-4">Skills & Interests</h2>
+
+                    <h4 class="mt-3">Skills</h4>
+                    <ul>
+                        <li><strong>Language:</strong> Fluent in Spanish.</li>
+                        <li><strong>Software:</strong> Experienced with Excel.</li>
+                        <li><strong>Leadership:</strong> Strong leadership and public speaking experience.</li>
+                        <li><strong>Organization:</strong> Experienced in balancing a full work load with multiple pressing tasks.</li>
+                        <li><strong>Technical:</strong> Hands-on experience working with sheet metal and operating machinery.</li>
+                    </ul>
+
+                    <h4 class="mt-4">Interests & Hobbies</h4>
+                    <ul>
+                        <li>Love to ski and mountain bike.</li>
+                        <li>Enjoy learning new things and having new experiences outdoors.</li>
+                        <li>Love the mountains.</li>
+                        <li>Photography.</li>
+                    </ul>
+
+                </div> </div>
+
+        </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
